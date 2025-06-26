@@ -111,7 +111,7 @@ const DeveloperFloatingBackground = () => {
       <div
         className="absolute top-10 right-20 text-white w-12 h-12 dev-symbol-glow"
         style={{
-          opacity: 0.07,
+          opacity: 0.1,
           animationDelay: "0s",
           animationDuration: `${totalCycleDuration}s`,
           animationName: "smoothGlow",
@@ -153,7 +153,7 @@ const DeveloperFloatingBackground = () => {
             key={`special-${index}`}
             className={`absolute ${symbol.position} text-white ${symbol.size} font-mono dev-symbol-glow`}
             style={{
-              opacity: 0.07,
+              opacity: 0.1,
               animationDelay: `${finalDelay}s`,
               animationDuration: `${totalCycleDuration}s`,
               animationName: "smoothGlow",
