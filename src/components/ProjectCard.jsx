@@ -91,7 +91,7 @@ export default function ProjectCard({
 
   const Navigate = useNavigate();
   return (
-    <Card className="md:min-w-[280px] max-md:min-w-[250px] max-w-[280px] overflow-hidden group hover:shadow-lg transition-shadow duration-300 border-gray-700 text-gray-300">
+    <Card className="md:min-w-[280px] max-md:min-w-[250px] max-w-[280px] overflow-hidden group hover:shadow-lg transition-shadow duration-300 border-gray-700 text-gray-300 hover:cursor-pointer">
       <div className="relative overflow-hidden" onClick={()=>{Navigate(`/projects/${id}`)}}>
         <img
           src={image || "/placeholder.svg"}
