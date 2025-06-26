@@ -10,17 +10,16 @@ export default function ProjectDescription() {
   const id = location.pathname.split("/").pop();
 
   useEffect(() => {
-
     const project = projects.find((project) => project.id === parseInt(id));
     setProject(project);
   }, [id]);
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white ">
 
       {/* Hero Section */}
-      <section className="relative py-12 md:py-20 bg-black">
-        <div className="container mx-auto  max-w-[900px]">
+      <section className="relative py-12 md:py-20 bg-black max-md:px-4">
+        <div className="container mx-auto max-w-[900px]">
           <div>
             <button className="px-3 py-2 rounded-md border border-gray-700 hover:bg-gray-800 flex gap-1 items-center max-md:mt-6" onClick={() => { window.history.back(); }}><IoMdArrowBack /> Back</button>
           </div>
