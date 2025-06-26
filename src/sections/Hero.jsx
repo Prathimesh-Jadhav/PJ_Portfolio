@@ -1,5 +1,5 @@
 import React from 'react'
-import handwave from '../assets/handwave.png'
+import handwave from '../assets/handWave.png'
 import { FiGithub } from "react-icons/fi";
 import { RiLinkedinFill } from "react-icons/ri";
 import myPhoto from '../assets/myPhoto3.png'
