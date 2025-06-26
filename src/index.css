@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Caprasimo&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  overflow-x: hidden;
+  box-sizing: border-box;
+  color:white;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.font-inter{
+  font-family: 'Inter Tight', sans-serif;
+}
+
+/* Float animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(3deg);
+  }
+}
+
+/* Smooth glow animation with gradual transitions */
+@keyframes smoothGlow {
+  0% {
+    opacity: 0.05;
+    filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0));
+  }
+
+  /* Gradual fade in */
+  0.4% {
+    opacity: 0.1;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.1));
+  }
+
+  0.8% {
+    opacity: 0.25;
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.25));
+  }
+
+  /* Full glow state */
+  1.2% {
+    opacity: 0.4;
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.4));
+  }
+
+  /* Stay glowing */
+  1.6% {
+    opacity: 0.4;
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.4));
+  }
+
+  /* Gradual fade out */
+  2% {
+    opacity: 0.25;
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.25));
+  }
+
+  2.4% {
+    opacity: 0.1;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.1));
+  }
+
+  /* Back to sleep */
+  2.8% {
+    opacity: 0.05;
+    filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0));
+  }
+
+  /* Stay sleeping for the rest of the cycle */
+  100% {
+    opacity: 0.05;
+    filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0));
+  }
+}
+
+/* Spin animation for React symbol */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Helper classes */
+.dev-symbol-glow {
+  transition: all 0.3s ease;
+}
+
+.dev-float {
+  display: inline-block;
+}
