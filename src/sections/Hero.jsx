@@ -85,7 +85,7 @@ const Hero = () => {
                         <div className='flex items-center gap-2 max-md:justify-center'>Jadhav <img src={handwave} alt="" width={40} className='mt-1 hand' /></div>
                     </div>
                     <div className='text-lg mt-5 text-gray-300 break-words text-justify animate-hero-left'>
-                        Hello,I am a web developer skilled in the MERN stack, focused on building efficient, scalable web applications and have a strong passion for solving problems.
+                        Full-Stack Web Developer passionate about building scalable systems and solving real-world problems with clean, efficient code.
                     </div>
 
                     {/* button  */}
